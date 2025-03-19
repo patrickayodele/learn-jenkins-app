@@ -1,4 +1,4 @@
-pipeline{
+pipeline {
     agent any
 
     stages {
@@ -9,7 +9,7 @@ pipeline{
                     reuseNode true
                 }
             }
-            steps{
+            steps {
                 sh '''
                     ls -la
                     node --version
